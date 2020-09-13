@@ -1,0 +1,4 @@
+create table if not exists logdata( product int , user int , point int );
+create table if not exists campaign( product int , user int );
+load data local infile 'logdata.csv' into table logdata fields terminated by ',' ;
+load data local infile 'campaign.csv' into table campaign fields terminated by ',' ;
